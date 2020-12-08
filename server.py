@@ -1,5 +1,3 @@
-
-
 import socket
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -14,7 +12,7 @@ serversocket.listen(3)
 while True:
     clientsocket, address = serversocket.accept()
     
-    print("recived connection from %s " % str(address))
+    print("received connection from %s " % str(address))
     
     message = 'hello! thank you for connecting to the server,,,, 2nd' + "\r\n"
     
